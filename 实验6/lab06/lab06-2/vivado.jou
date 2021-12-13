@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Nov 28 15:32:19 2021
+# Process ID: 19428
+# Current directory: C:/Users/Tanjf/Desktop/lab06/lab06-2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26832 C:\Users\Tanjf\Desktop\lab06\lab06-2\lab6.xpr
+# Log file: C:/Users/Tanjf/Desktop/lab06/lab06-2/vivado.log
+# Journal file: C:/Users/Tanjf/Desktop/lab06/lab06-2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Tanjf/Desktop/lab06/lab06-2/lab6.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reorder_files -fileset constrs_1 -after C:/Users/Tanjf/Desktop/lab06/lab06-2/lab6.srcs/constrs_1/new/constraint_test.xdc C:/Users/Tanjf/Desktop/lab06/lab06-2/lab6.srcs/constrs_1/new/constraint_test.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

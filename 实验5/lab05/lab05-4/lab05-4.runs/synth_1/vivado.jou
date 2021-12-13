@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Nov 21 11:28:57 2021
+# Process ID: 25040
+# Current directory: C:/Users/Tanjf/Desktop/lab05/lab05-4/lab05-4.runs/synth_1
+# Command line: vivado.exe -log lab5.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab5.tcl
+# Log file: C:/Users/Tanjf/Desktop/lab05/lab05-4/lab05-4.runs/synth_1/lab5.vds
+# Journal file: C:/Users/Tanjf/Desktop/lab05/lab05-4/lab05-4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source lab5.tcl -notrace

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Dec 20 10:29:10 2021
+# Process ID: 6880
+# Current directory: C:/Users/Tanjf/Desktop/FPGAOL串口测试程序及说明文档/fpgaol_uart.srcs/sources_1/ip/fifo_32x8bit_0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15144 C:\Users\Tanjf\Desktop\FPGAOL串口测试程序及说明文档\fpgaol_uart.srcs\sources_1\ip\fifo_32x8bit_0\fifo_32x8bit_0.dcp
+# Log file: C:/Users/Tanjf/Desktop/FPGAOL串口测试程序及说明文档/fpgaol_uart.srcs/sources_1/ip/fifo_32x8bit_0/vivado.log
+# Journal file: C:/Users/Tanjf/Desktop/FPGAOL串口测试程序及说明文档/fpgaol_uart.srcs/sources_1/ip/fifo_32x8bit_0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_checkpoint C:/Users/Tanjf/Desktop/FPGAOL串口测试程序及说明文档/fpgaol_uart.srcs/sources_1/ip/fifo_32x8bit_0/fifo_32x8bit_0.dcp

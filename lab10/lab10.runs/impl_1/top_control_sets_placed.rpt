@@ -1,0 +1,126 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Dec 22 21:05:49 2021
+| Host         : LAPTOP-8GO78VTB running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    48 |
+|    Minimum number of control sets                        |    48 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   178 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    48 |
+| >= 0 to < 4        |    19 |
+| >= 4 to < 6        |     5 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |    17 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               8 |            4 |
+| No           | No                    | Yes                    |             107 |           53 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              16 |            9 |
+| Yes          | No                    | Yes                    |             211 |           57 |
+| Yes          | Yes                   | No                     |              16 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                                                  Enable Signal                                                 |                                         Set/Reset Signal                                         | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+----------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                                                                                                                | rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gcc0.gc0.count_d1_reg[0][0]                  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | rx_inst/rx_reg_63_out                                                                                          |                                                                                                  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG |                                                                                                                | tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rst_wr_reg2                                  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | tx_inst/tx_i_1_n_0                                                                                             | rst_IBUF                                                                                         |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG |                                                                                                                | tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gcc0.gc0.count_d1_reg[0][0]                  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG |                                                                                                                | tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rst_rd_reg2                                  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | rx_inst/rx_reg_113_out                                                                                         |                                                                                                  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | rx_inst/rx_reg_55_out                                                                                          |                                                                                                  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | rx_inst/rx_reg_39_out                                                                                          |                                                                                                  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG |                                                                                                                | rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rst_wr_reg2                                  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | rx_inst/rx_reg_211_out                                                                                         |                                                                                                  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG |                                                                                                                | rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rst_rd_reg2                                  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | rx_inst/rx_reg_015_out                                                                                         |                                                                                                  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | rx_inst/rx_reg_47_out                                                                                          |                                                                                                  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | rx_inst/rx_reg_71_out                                                                                          |                                                                                                  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG |                                                                                                                | tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1_n_0 |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG |                                                                                                                | tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1_n_0 |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG |                                                                                                                | rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1_n_0 |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG |                                                                                                                | rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1_n_0 |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | rx_byte_cnt[3]_i_1_n_0                                                                                         | rst_IBUF                                                                                         |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | rx_inst/rx_cnt[3]_i_1_n_0                                                                                      | rst_IBUF                                                                                         |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG |                                                                                                                | tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/Q[1]                                         |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG |                                                                                                                | rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/Q[1]                                         |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | tx_inst/tx_cnt0                                                                                                | rst_IBUF                                                                                         |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG |                                                                                                                |                                                                                                  |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | rx_byte_buff_0[7]_i_1_n_0                                                                                      | rst_IBUF                                                                                         |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | tx_byte_cnt[7]_i_1_n_0                                                                                         | rst_IBUF                                                                                         |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | hex_seg_buff[3]                                                                                                | rst_IBUF                                                                                         |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | hex_seg_buff[11]                                                                                               | rst_IBUF                                                                                         |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | hex_seg_buff[19]                                                                                               | rst_IBUF                                                                                         |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | hex_seg_buff[27]                                                                                               | rst_IBUF                                                                                         |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | rx_byte_buff_4[7]_i_1_n_0                                                                                      | rst_IBUF                                                                                         |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | rx_byte_buff_3[7]_i_1_n_0                                                                                      | rst_IBUF                                                                                         |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | rx_inst/rx_vld0                                                                                                | rst_IBUF                                                                                         |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | rx_byte_buff_2[7]_i_1_n_0                                                                                      | rst_IBUF                                                                                         |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | rx_byte_buff_1[7]_i_1_n_0                                                                                      | rst_IBUF                                                                                         |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | wr_data                                                                                                        |                                                                                                  |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | rx_byte_buff_5[7]_i_1_n_0                                                                                      | rst_IBUF                                                                                         |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/E[0]                   | rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/Q[0]                                         |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/E[0]                   | tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/Q[0]                                         |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | tx_inst/tx_rd0                                                                                                 | rst_IBUF                                                                                         |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/E[0]                           | tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gcc0.gc0.count_d1_reg[0][1]                  |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gc0.count_d1_reg[4][0] | tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/Q[0]                                         |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gc0.count_d1_reg[4][0] | rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/Q[0]                                         |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/E[0]                           | rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gcc0.gc0.count_d1_reg[0][1]                  |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | tx_byte_buff_2[6]_i_1_n_0                                                                                      | rst_IBUF                                                                                         |                7 |             15 |         2.14 |
+|  clk_IBUF_BUFG | tx_byte_buff_17[6]_i_1_n_0                                                                                     | rst_IBUF                                                                                         |                8 |             38 |         4.75 |
+|  clk_IBUF_BUFG |                                                                                                                | rst_IBUF                                                                                         |               39 |             83 |         2.13 |
++----------------+----------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

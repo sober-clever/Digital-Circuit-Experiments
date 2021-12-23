@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Dec 21 08:37:50 2021
+# Process ID: 276
+# Current directory: C:/Users/Tanjf/Desktop/lab10
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9628 C:\Users\Tanjf\Desktop\lab10\lab10.xpr
+# Log file: C:/Users/Tanjf/Desktop/lab10/vivado.log
+# Journal file: C:/Users/Tanjf/Desktop/lab10\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Tanjf/Desktop/lab10/lab10.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'fifo_32x8bit_0' is locked:
+* IP definition 'FIFO Generator (13.1)' for IP 'fifo_32x8bit_0' (customized with software release 2016.2) has a newer minor version in the IP Catalog. * IP definition 'FIFO Generator (13.1)' for IP 'fifo_32x8bit_0' (customized with software release 2016.2) has a different revision in the IP Catalog.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 1013.254 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4 -scripts_only
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Tanjf/Desktop/lab10/lab10.srcs/sources_1/ip/fifo_32x8bit_0/fifo_32x8bit_0.xci' is already up-to-date
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 21 08:42:53 2021...

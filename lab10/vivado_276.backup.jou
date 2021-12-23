@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Dec 21 08:37:50 2021
+# Process ID: 276
+# Current directory: C:/Users/Tanjf/Desktop/lab10
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9628 C:\Users\Tanjf\Desktop\lab10\lab10.xpr
+# Log file: C:/Users/Tanjf/Desktop/lab10/vivado.log
+# Journal file: C:/Users/Tanjf/Desktop/lab10\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Tanjf/Desktop/lab10/lab10.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4 -scripts_only
+wait_on_run impl_1

@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Dec  8 22:38:27 2021
+# Process ID: 37904
+# Current directory: C:/Users/Tanjf/Desktop/lab8/lab8_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36112 C:\Users\Tanjf\Desktop\lab8\lab8_4\lab8_4.xpr
+# Log file: C:/Users/Tanjf/Desktop/lab8/lab8_4/vivado.log
+# Journal file: C:/Users/Tanjf/Desktop/lab8/lab8_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Tanjf/Desktop/lab8/lab8_4/lab8_4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  8 22:39:27 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Tanjf/Desktop/lab8/lab8_4/lab8_4.runs/synth_1/runme.log
+[Wed Dec  8 22:39:27 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Tanjf/Desktop/lab8/lab8_4/lab8_4.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Wed Dec  8 22:49:55 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Tanjf/Desktop/lab8/lab8_4/lab8_4.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  8 23:01:05 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Tanjf/Desktop/lab8/lab8_4/lab8_4.runs/synth_1/runme.log
+[Wed Dec  8 23:01:05 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Tanjf/Desktop/lab8/lab8_4/lab8_4.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  8 23:14:02 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Tanjf/Desktop/lab8/lab8_4/lab8_4.runs/synth_1/runme.log
+[Wed Dec  8 23:14:02 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Tanjf/Desktop/lab8/lab8_4/lab8_4.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4 -scripts_only
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  8 23:18:42 2021...
